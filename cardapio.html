@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTANTO CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Projeto BKB</title>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <!-- CONTAINER PARA CENTRALIZAR ELEMENTOS NO CENTRO -->
+        <div class="container">
+            <img id="logo" src="./src/assets/Projeto BKB Code 1.png" alt="Projeto BKB Code">
+            <img src="./src/assets/Logos 1.png" alt="Logo BKB + Kenzie">
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO BANNER -->
+        <section class="banner">
+            <img src="./src/assets/banner.png" alt="Banner com hamburgueres">
+        </section>
+
+        <!-- SEÇÃO PRODUTOS -->
+        <section class="secaoProdutos">
+
+            <div class="container">
+                <!-- LISTA DE PRODUTOS -->
+                <ul class="produtosLista">
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+
+                        <img class="imgCombo" src="./src/assets/combo_whopper.png" alt="combo whopper">
+                        <h3 class="nomeCombo">Combo Whopper</h3>
+                        <p class="precoCombo">R$ 32.90</p>
+
+                        <button onclick="addCarrinho(0)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/bk_chicken.png" alt="bk chicken">
+                        <h3 class="nomeCombo">BK Chicken</h3>
+                        <p class="precoCombo">R$ 16.90</p>
+                        <button onclick="addCarrinho(1)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/sorvete.png" alt="Balde de Sorvete sorvete">
+                        <h3 class="nomeCombo">Balde de Sorvete</h3>
+                        <p class="precoCombo">R$ 12.80</p>
+                        <button onclick="addCarrinho(2)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/cheddar_duplo.png" alt="cheddar duplo">
+                        <h3 class="nomeCombo">Cheddar Duplo</h3>
+                        <p class="precoCombo">R$ 13.90</p>
+                        <button onclick="addCarrinho(3)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/whopper_rodeio.png" alt="Combo Whopper Rodeio">
+                        <h3 class="nomeCombo">Combo Whopper Rodeio</h3>
+                        <p class="precoCombo">R$ 38.90</p>
+                        <button onclick="addCarrinho(4)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/bk_mix.png" alt="Mix de Ovomaltine">
+                        <h3 class="nomeCombo"> BK™ Mix Ovomaltine®</h3>
+                        <p class="precoCombo">R$ 7.90</p>
+                        <button onclick="addCarrinho(5)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/mix_oreo.png" alt="Mix de Oreo">
+                        <h3 class="nomeCombo">BK™ Mix Oreo®</h3>
+                        <p class="precoCombo">R$ 7.90</p>
+                        <button onclick="addCarrinho(6)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/shake.png" alt="Shake de Doce de Leite">
+                        <h3 class="nomeCombo">Shake Doce de Leite</h3>
+                        <p class="precoCombo">R$ 12.80</p>
+                        <button onclick="addCarrinho(7)" type="button">Adicionar</button>
+                    </li>
+
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+                        <img class="imgCombo" src="./src/assets/onion_rings.png" alt="Onion Rings">
+                        <h3 class="nomeCombo">Onion Rings"</h3>
+                        <p class="precoCombo">R$ 13.90</p>
+                        <button onclick="addCarrinho(8)" type="button">Adicionar</button>
+                    </li>
+                    <!-- ITEM DE PRODUTO -->
+                    <li class="cardProduto">
+
+                        <img class="imgCombo" src="./src/assets/combo_whopper.png" alt="combo whopper">
+                        <h3 class="nomeCombo">Combo Whopper</h3>
+                        <p class="precoCombo">R$ 32.90</p>
+
+                        <button onclick="addCarrinho(9)" type="button">Adicionar</button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <!-- SEÇÃO CARRINHO -->
+        <section class="carrinho">
+
+            <!-- CABEÇALHO INFORMAÇÕES DO USUÁRIO -->
+            <header class="infoResumo">
+                <div class="container">
+                    <!-- INFORMAÇÕES DO USUÁRIO -->
+                    <div id="infoUsuario" class="infoUsuario">
+                    </div>
+
+                    <!-- INFORMAÇÕES DE PREÇO TOTAL -->
+                    <p class="infoPreco">Total: R$ <span id="valorTotal"></span></p>
+                </div>
+            </header>
+
+            <div class="container">
+                <!-- LISTA/RESUMO DE PRODUTOS -->
+                <div class="resumoPedido">
+
+                    <ul id="produtosNoCarrinho" class="listaProdutos">
+                    </ul>
+
+                </div>
+
+                <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
+                <div class="btnFinalizaPedido">
+                    <button type="button">Finalizar Pedido</button>
+                    <button type="button">Cancelar Pedido</button>
+                </div>
+            </div>
+
+        </section>
+        <script src="./src/js/script.js"></script>
+        <script>
+            let valor = sessionStorage.getItem('modalidade')
+            document.getElementById('infoUsuario').innerHTML = ` <h3> Minha sacola</h3>
+     <p>${valor}</p>`;
+        </script>
+
+    </footer>
+</body>
+
+</html>

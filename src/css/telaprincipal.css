@@ -1,0 +1,22 @@
+.img__telaprincipal {
+    width: 50%;
+}
+
+.container__telaprincipal {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #0054A5;
+    color: #fff;
+    margin: 1em;
+    border: none;
+    cursor: pointer;
+    padding: 2em;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #f91e00;
+}
