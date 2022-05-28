@@ -1,22 +1,81 @@
 .img__telaprincipal {
-    width: 50%;
+    width: 28%;
 }
 
 .container__telaprincipal {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
-button {
-    background-color: #0054A5;
-    color: #fff;
-    margin: 1em;
-    border: none;
+.button {
     cursor: pointer;
-    padding: 2em;
-    border-radius: 8px;
+    padding: 3em;
+    margin: 2.3em 0.2em;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DB3B1D;
+    border-radius: 0.3em;
 }
 
-button:hover {
-    background-color: #f91e00;
+.button:hover {
+    background-color: #faae1757;
+}
+
+p {
+    font-size: 1.4em;
+    margin-top: 0.7em;
+    font-family: 'Nunito', sans-serif;
+    color: #DB3B1D;
+}
+
+.img {
+    width: 60%;
+}
+
+.container__colum {
+    display: block;
+    margin-top: 2%;
+}
+
+.button_1 {
+    cursor: pointer;
+    padding: 1em;
+    margin: 2.3em 0.2em;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DB3B1D;
+    border-radius: 0.3em;
+}
+
+.button_1:hover {
+    background-color: #faae1757;
+}
+
+input {
+    margin-top: 0.8em;
+    border-radius: 8px;
+    border: 2px solid #DB3B1D;
+    font-size: 1.4em;
+    font-family: 'Nunito', sans-serif;
+    padding: 1em;
+    height: 3%;
+    width: 85%;
+}
+
+input:focus {
+    color: #DB3B1D;
+    outline: none;
+}
+
+.texto_p {
+    font-weight: bold;
 }

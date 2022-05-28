@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-    max-width: 1330px;
     margin: 0 auto;
     padding: 30px;
 }
@@ -15,6 +14,7 @@ body {
 .cabecalho .container {
     display: flex;
     justify-content: space-between;
+    background-color: #502314;
 }
 
 
@@ -47,14 +47,13 @@ body {
     margin-bottom: 15px;
 }
 
-
-/* .secaoProdutos .cardProduto img {
-    
-} */
+.secaoProdutos .cardProduto img {
+    width: 90%;
+}
 
 .secaoProdutos .cardProduto h3 {
     color: #502314;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
     margin: 28px auto;
     min-height: 40px;
@@ -63,7 +62,7 @@ body {
 
 .secaoProdutos .cardProduto p {
     color: black;
-    font-size: 18px;
+    font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 28px;
 }
@@ -71,12 +70,12 @@ body {
 .secaoProdutos .cardProduto button {
     background: #F5F3F0;
     border: none;
+    text-align: center;
     border-radius: 8px;
-    width: 177px;
+    width: 100%;
     height: 41px;
     color: #2D2D2D;
-    font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1em;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
 }
@@ -106,7 +105,7 @@ button:hover {
 
 .carrinho .infoUsuario h3 {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 1.2em;
     color: #F7F5F0;
     margin-bottom: 18px;
 }
@@ -121,13 +120,13 @@ button:hover {
 
 .carrinho .infoResumo .infoPreco {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.8em;
     line-height: 44px;
     color: #F7F5F0;
 }
 
 .carrinho .resumoPedido {
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -149,12 +148,12 @@ button:hover {
 }
 
 .carrinho .resumoPedido .cardProduto .infoNome img {
-    width: 150px;
+    width: 60%;
 }
 
 .carrinho .resumoPedido .cardProduto .infoNome p {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.4em;
     color: #502314;
     margin-left: 30px;
 }
@@ -167,8 +166,8 @@ button:hover {
 
 .carrinho .resumoPedido .cardProduto .infoPreco p {
     font-style: italic;
-    font-weight: 200;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 1.3em;
     color: #2D2D2D;
 }
 
@@ -216,3 +215,33 @@ button:hover {
     border: 4px solid #DB3B1D;
     color: #DB3B1D;
 }
+
+@media only screen and (max-width: 600px) {
+    .cabecalho .container {
+        display: block;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .secaoProdutos .cardProduto {
+        width: 46%;
+        margin: 0 1%;
+    }
+    .secaoProdutos .cardProduto img {
+        width: 89%;
+    }
+    .carrinho .resumoPedido .cardProduto {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .carrinho .resumoPedido .cardProduto .infoNome p {
+        font-weight: 700;
+        font-size: 0.9em;
+    }
+    .carrinho .resumoPedido .cardProduto .infoPreco p {
+        font-weight: 600;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 390px) {}

@@ -158,18 +158,19 @@
 
                 </div>
 
-                <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
-                <div class="btnFinalizaPedido">
-                    <button type="button">Finalizar Pedido</button>
-                    <button type="button">Cancelar Pedido</button>
-                </div>
-            </div>
 
+            </div>
+            <!-- BOTẼOS PARA FINALZIAR/CANCELAR O PEDIDO -->
+            <div class="btnFinalizaPedido">
+                <button type="button">Finalizar Pedido</button>
+                <button type="button">Cancelar Pedido</button>
+            </div>
         </section>
         <script src="./src/js/script.js"></script>
         <script>
-            let valor = sessionStorage.getItem('modalidade')
-            document.getElementById('infoUsuario').innerHTML = ` <h3> Minha sacola</h3>
+            let valor = sessionStorage.getItem('modalidade');
+            let nomeCliente = sessionStorage.getItem('nome');
+            document.getElementById('infoUsuario').innerHTML = ` <h3> Olá ${nomeCliente} | Minha sacola</h3>
      <p>${valor}</p>`;
         </script>
 

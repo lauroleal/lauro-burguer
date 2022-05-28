@@ -15,8 +15,19 @@
         <section class="container__telaprincipal">
             <img class="img__telaprincipal" src="./src/assets/naoPegueFila.png">
         </section>
-        <section class="container__telaprincipal">
-            <button onclick="modalidade('Comer no Restaurante')">COMER NO RESTAURANTE</button> <button onclick="modalidade('Pedido para a Viagem')">LEVAR PARA A VIAGEM</button>
+        <section id="botoes" class="container__telaprincipal">
+            <section>
+                <button class="button">
+                <img onclick="modalidade('Comer no Restaurante')" src="./src/assets/hamburguer.png">
+            <p>Comer no Restaurante</p>
+            </button>
+            </section>
+            <section>
+                <button class="button">
+                <img onclick="modalidade('Pedido para a Viagem')" src="./src/assets/sacola.png">
+                <p>Levar para a viagem</p>
+            </button>
+            </section>
         </section>
     </main>
     <script src="./src/js/script.js"></script>
