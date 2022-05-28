@@ -44,4 +44,5 @@ Projeto desenvolvido para o evento Projeto Burger King ministrado pelos instruto
 ## Referências
 
 - [Projeto Original](https://github.com/Kenzie-Academy-Brasil/projetobkdev);
+- [Visualizar Minha Versão](https://lauroleal.github.io/lauro-burguer/);
 
